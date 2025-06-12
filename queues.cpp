@@ -81,4 +81,16 @@ class Queues{
 int main(){
     Queues q;
     char ch;
+
+    while (true){
+        try
+        {
+            cout << "menu" << endl;
+        }
+        catch(exception& e)
+        {
+            cout << e.what() << '\n';
+        }
+        
+    }
 }
