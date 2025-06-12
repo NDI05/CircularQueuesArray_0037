@@ -39,5 +39,16 @@ class Queues{
             cout << "Queue underflow\n";
             return;
         }
+        cout << "\nElemen Yang Terhapus Adalah: " << queue_array[front] << endl;
+        if (front == rear){
+            front = -1;
+            rear = -1;
+        }else{
+            if (front == max-1){
+                front = 0;
+            }else{
+                
+            }
+        }
     }
 };
