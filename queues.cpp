@@ -2,11 +2,21 @@
 using namespace std;
 
 class Queues{
-    int frot, rear, max = 5;
+    int front, rear, max = 5;
     int queue_array[5];
 
     public:
         Queues(){
+            front = -1;
+            rear = -1;
+        }
+
+        void insert(){
+            int num;
+            cout << "Enter Number: ";
+            cin >> num;
+            cout << endl;
+
             
         }
 };
