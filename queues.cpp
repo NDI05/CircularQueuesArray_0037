@@ -31,8 +31,8 @@ class Queues{
                 }else{
                     rear = rear + 1;
                 }
-                queue_array[rear] = num;
             }
+            queue_array[rear] = num;
         }
     void remove(){
         if (front == -1){
@@ -68,6 +68,13 @@ class Queues{
                 cout << queue_array[front_position] << "  ";
                 front_position++;
             }
+            cout << endl;
+        }else{
+            while (front_position <= max - 1)
+            {
+                cout << queue_array[front_position] << "    ";
+                front_position++;
+            }
             front_position = 0;
             while(front_position <= rear_position){
                 cout << queue_array[front_position] << "  ";
@@ -96,14 +103,25 @@ int main(){
             {
             case '1':
                 q.insert();
+                break;
+            case '2':
+                q.remove();
+                break;
+            case '3':
+                q.display();
+                break;
+            case '4':
+                return 0;
             default:
+                cout << "The entered value di unknow";
                 break;
             }
         }
         catch(exception& e)
         {
-            cout << e.what() << '\n';
+            cout << "Check for the values entered" << '\n';
         }
         
     }
+    return 0;
 }
