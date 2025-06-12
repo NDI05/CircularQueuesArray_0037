@@ -35,6 +35,9 @@ class Queues{
             }
         }
     void remove(){
-        
+        if (front == -1){
+            cout << "Queue underflow\n";
+            return;
+        }
     }
 };
